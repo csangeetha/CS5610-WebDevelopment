@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Task 3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        h3:hover{
+            color: darkblue;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function loremClick(){
+            document.getElementById('secondDiv').innerHTML='<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor \
+            incididunt ut labore et dolore magna aliqua. Ultrices eros in cursus turpis massa tincidunt. Scelerisque purus semper eget duis \
+            at tellus. Consectetur lorem donec massa sapien faucibus. Nisl condimentum id venenatis a condimentum vitae sapien. Duis ut diam\
+             quam nulla porttitor. Ut lectus arcu bibendum at varius vel. Nec dui nunc mattis enim ut tellus elementum. Dolor sit amet \
+             consectetur adipiscing elit pellentesque habitant morbi tristique. Integer vitae justo eget magna. Tortor consequat id \
+             porta nibh venenatis cras sed felis eget. Egestas purus viverra accumsan in. Elementum sagittis vitae et leo duis. \
+             Pellentesque pulvinar pellentesque habitant morbi tristique.</p>\
+             \
+            <p>Dictum non consectetur a erat nam at lectus urna duis. Potenti nullam ac tortor vitae purus faucibus ornare suspendisse. \
+            Ipsum a arcu cursus vitae congue mauris. In cursus turpis massa tincidunt dui. Euismod in pellentesque massa placerat duis \
+            ultricies lacus sed turpis. Urna id volutpat lacus laoreet non curabitur gravida arcu ac. Consequat mauris nunc congue nisi \
+            vitae suscipit tellus. Leo duis ut diam quam nulla porttitor massa id. Faucibus et molestie ac feugiat. Tristique magna sit \
+            amet purus gravida quis blandit turpis. Ut diam quam nulla porttitor massa id neque aliquam. Porttitor lacus luctus accumsan \
+            tortor. Vitae justo eget magna fermentum iaculis. Magnis dis parturient montes nascetur. Nulla aliquet enim tortor at auctor \
+            urna. Fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate sapien. Venenatis tellus in metus vulputate eu \
+            scelerisque felis imperdiet proin. Aliquet porttitor lacus luctus accumsan tortor posuere ac.</p>\
+            \
+            <p>Nunc mattis enim ut tellus elementum sagittis vitae et leo. Aliquam faucibus purus in massa tempor nec feugiat. Egestas \
+            purus viverra accumsan in nisl nisi scelerisque eu ultrices. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit. \
+            Mi quis hendrerit dolor magna eget est lorem. A cras semper auctor neque vitae tempus quam. Elit ullamcorper dignissim cras \
+            tincidunt. Hac habitasse platea dictumst quisque sagittis purus sit amet. Suspendisse in est ante in nibh. Ultrices mi tempus \
+            imperdiet nulla malesuada pellentesque elit eget gravida. Malesuada bibendum arcu vitae elementum curabitur. Blandit cursus risus \
+            at ultrices mi. Amet venenatis urna cursus eget. Sem viverra aliquet eget sit amet tellus cras adipiscing enim. Velit dignissim \
+            sodales ut eu sem. Consequat nisl vel pretium lectus quam id leo in vitae.</p>\
+            \
+            <p>Scelerisque in dictum non consectetur a erat nam at. Sem nulla pharetra diam sit. At ultrices mi tempus imperdiet. Elit \
+            ullamcorper dignissim cras tincidunt lobortis feugiat. Mauris pellentesque pulvinar pellentesque habitant morbi tristique. \
+            Feugiat nisl pretium fusce id. Ipsum nunc aliquet bibendum enim. Adipiscing enim eu turpis egestas pretium aenean pharetra. \
+            Tristique et egestas quis ipsum suspendisse ultrices gravida dictum fusce. In mollis nunc sed id. A lacus vestibulum sed arcu \
+            non odio euismod lacinia at. Velit scelerisque in dictum non consectetur a erat nam. Ac auctor augue mauris augue neque. Commodo\
+             ullamcorper a lacus vestibulum sed arcu non odio euismod. Sagittis orci a scelerisque purus semper eget. Ut sem viverra aliquet\
+              eget sit. Viverra aliquet eget sit amet tellus cras adipiscing. Quis ipsum suspendisse ultrices gravida dictum.</p>'
+        }
+
+        function bottlesClick(){
+            document.getElementById('secondDiv').innerHTML='<p>99 bottles of beer on the wall, 99 bottles of beer.\
+                            Take one down and pass it around, 98 bottles of beer on the wall.</p>\
+                            <p>98 bottles of beer on the wall, 98 bottles of beer.\
+                            Take one down and pass it around, 97 bottles of beer on the wall.</p>\
+                            <p>97 bottles of beer on the wall, 97 bottles of beer.\
+                            Take one down and pass it around, 96 bottles of beer on the wall.</p>\
+                            <p>96 bottles of beer on the wall, 96 bottles of beer.\
+                            Take one down and pass it around, 95 bottles of beer on the wall.</p>'
+        }
+
+        function lastClick(){
+            document.getElementById('secondDiv').innerHTML="this is the third thing"
+        }
+    </script>
+</head>
+<body onload="loremClick()">
+    <h1 style="text-align:center;">HW02 Task Three</h1>
+    <div style="width:100%;">
+        <div id="firstDiv" style="float:left;width:33%;text-align:center;text-decoration:underline">
+            
+                <h3 onclick="loremClick()">Lorem Ipsem</h3>
+                <h3 onclick="bottlesClick()">99 Bottles</h3>
+                <h3 onclick="lastClick()">Last Thing</h3>
+            
+        </div>
+        <div id="secondDiv" style="float:right;width:67%;">
+
+        </div>
+    </div>
+</body>
+</html>
