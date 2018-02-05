@@ -53,7 +53,8 @@ defmodule Calc do
       Enum.member?(list , "-") ->
          subtraction(list,acc)
       true ->
-        main()  
+        IO.inspect(Enum.at(list,0))
+        main()   
     end
     acc
   end
@@ -78,7 +79,7 @@ defmodule Calc do
         Enum.at(list,index+1)
         end
         total = leftVal + rightVal 
-        acc=acc+total |> IO.inspect
+        acc=acc+total 
         Tuple.delete_at(list_tuple,index-1) 
         |> Tuple.delete_at(index-1)
         |> Tuple.delete_at(index-1)
@@ -108,7 +109,7 @@ defmodule Calc do
           Enum.at(list,index+1)
          end
          total = leftVal - rightVal
-         acc =total + acc|> IO.inspect
+         acc =total + acc
          Tuple.delete_at(list_tuple,index-1) 
          |> Tuple.delete_at(index-1)
          |> Tuple.delete_at(index-1)
@@ -136,7 +137,7 @@ defmodule Calc do
           Enum.at(list,index+1)
          end
          total = leftVal * rightVal 
-         acc= acc+total|> IO.inspect
+         acc= acc+total
          Tuple.delete_at(list_tuple,index-1) 
          |> Tuple.delete_at(index-1)
          |> Tuple.delete_at(index-1)
@@ -218,7 +219,7 @@ defmodule Calc do
         IO.puts("Invalid input")
         main()
     end
-    acc=total+acc |> IO.inspect
+    acc=total+acc 
     Tuple.delete_at(list_tuple,Enum.at(index_of_ob,0)) 
          |> Tuple.delete_at(Enum.at(index_of_ob,0))
          |> Tuple.delete_at(Enum.at(index_of_ob,0))
