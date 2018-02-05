@@ -1,0 +1,39 @@
+
+Web Dev Spring 2018 HW03 Status
+
+Answer the following questions:
+
+1. What's your name?
+	Sangeetha Chandrashekar
+
+
+2. What's the URL of the github repo with your work for this HW?
+	https://github.com/csangeetha/memory
+
+
+
+3. What's the URL that you deployed to?
+	http://memory.sangeethachandrashekar.com/
+
+
+
+4. Is your game functionality complete? If not, what's missing?
+	yes
+
+
+
+5. Is your game properly deployed? If not, what went wrong?
+	yes
+
+
+
+6. Does your deployed page pass the W3C HTML Validator? (https://validator.w3.org/)
+	gives a warning = Warning: The main role is unnecessary for element main.
+
+
+
+
+And here's a list of tasks for grading comments. Just leave this here:
+ - Development
+ - Deployment
+ - Submission
