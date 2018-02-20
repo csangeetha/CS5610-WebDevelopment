@@ -1,0 +1,7 @@
+<div class="card">
+  <div class="card-header bg-success text-white text-center"><h2>Edit Task</h2></div>
+  <div class="card-body bg-light">
+  <%= render "form.html", Map.put(assigns, :action, task_path(@conn, :update, @task)) %>
+  <span><%= link "Back", to: page_path(@conn, :feed) %></span>
+</div>
+</div>

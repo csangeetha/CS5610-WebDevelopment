@@ -1,0 +1,47 @@
+<%= if @current_user do %>
+<div class="row">
+  <div class="col">
+    <div class="card">
+      <div class="card-header bg-success text-white text-center"><h4>Create Tasks</h4></div>
+      <div class="card-body bg-light">
+        <%= render TasktrackWeb.TaskView, "form.html",
+        Map.put(assigns, :action, task_path(@conn, :create)) %>
+      </div>
+    </div>
+  </div>
+</div>
+<% end %>
+<div style="margin-top:5%;margin-bottom:5%;">
+  <h1>Your Feed</h1>
+
+  <%= Enum.map @tasks, fn task -> %>
+  <div style="margin-bottom:2%;">
+    <div class="row">
+      <div class="col">
+        <div class="card">
+          <div class="card-header"><%= task.title %>
+            <span style="margin-left:80%;">
+              <span><%= link "Edit", to: task_path(@conn, :edit, task), class: "btn btn-default btn-xs" %></span>
+              <span><%= link "Delete", to: task_path(@conn, :delete, task), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %></span>
+            </span></div>
+            <div class="card-body">
+              <h6 class="card-title"><%= task.assigned_to.name %></h6>
+              <p><%= task.description %></p>
+              <p>
+                <span>Status:
+                  <%= if task.status do %>
+                  <span style="color:green;">Completed</span>
+                  <% else %>
+                  <span style="color:red"> Pending</span>
+                  <% end %>
+                </span>
+                <span style="margin-left:28%;">Time taken: <%= task.time_taken %></span>
+                <span style="margin-left:20%;">Created by: <%= task.assigned_by.name %></span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <% end %>
+  </div>

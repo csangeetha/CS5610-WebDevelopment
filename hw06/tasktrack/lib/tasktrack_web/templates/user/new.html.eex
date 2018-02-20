@@ -1,0 +1,11 @@
+<div style="margin-top:10%; width:60%;margin-left:15%;">
+  <div class="card bg-info text-white">
+    <div class="card-header text-center">
+      <h2>New User</h2>
+    </div>
+    <div class="card-body bg-light text-dark">
+      <%= render "form.html", Map.put(assigns, :action, user_path(@conn, :create)) %>
+      <span class="text-center"><%= link "Back", to: page_path(@conn, :index) %></span>
+    </div>
+  </div>
+</div>

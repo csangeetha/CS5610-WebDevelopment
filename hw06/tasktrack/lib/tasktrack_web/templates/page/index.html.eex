@@ -1,0 +1,29 @@
+
+<!-- session_path(@conn, :create) -->
+<div style="margin-top:15%;width:70%;height:50%;margin-left:15%;">
+<div class="card">
+  <div class="card bg-dark text-white">
+    <div class="card-header">
+      <h2 class="text-center">Log In</h2>
+    </div>
+  </div>
+  <div class="card-block text-center">
+    <div class="card bg-light text-dark">
+      <%= form_tag("/session", method: :post) do %>
+      <div style="margin-top:20px;">
+        <div class="form-group">
+          Email : &nbsp;
+          <input type="email" name="email" placeholder="user@example.com" >
+        </div>
+        <!-- passwords come later -->
+        <div class="form-group">
+          <button class="btn btn-primary">Log in </button>
+          <p> Don't have an account?
+            <%= link "Register", to: user_path(@conn, :new) %></p>
+          </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
